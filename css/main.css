@@ -76,8 +76,14 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-.current a {
+.navigation a:not(.current) {
+  color: #212121;
+}
+.current {
   color: var(--optional-text-color);
 }
 .navigation li:not(:last-child) {
